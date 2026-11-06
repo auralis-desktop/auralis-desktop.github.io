@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Auralis — A desktop that feels alive.</title>
+  <meta name="description" content="Auralis is a complete Material Design 3 desktop experience for Hyprland. Beautiful. Functional. Yours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <span class="nav-logo">✦</span>
+        <span>Auralis</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="pages/install.html">Install</a>
+        <a href="pages/docs.html">Docs</a>
+        <a href="https://github.com/auralis-desktop/auralis-desktop" target="_blank" rel="noopener">
+          GitHub
+        </a>
+      </div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="material-symbols-outlined">light_mode</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-badge">
+        <span class="material-symbols-outlined">auto_awesome</span>
+        Material Design 3 · Hyprland · Quickshell
+      </div>
+      <h1 class="hero-title">
+        A desktop that<br />
+        <span class="gradient-text">feels alive.</span>
+      </h1>
+      <p class="hero-sub">
+        Auralis is a complete desktop experience for Arch Linux — a beautiful
+        Quickshell shell, full Hyprland Lua configuration, and a Material 3
+        settings app that actually works.
+      </p>
+      <div class="hero-actions">
+        <a href="pages/install.html" class="btn btn-filled">
+          <span class="material-symbols-outlined">download</span>
+          Get started
+        </a>
+        <a href="https://github.com/auralis-desktop/auralis-desktop" class="btn btn-tonal" target="_blank" rel="noopener">
+          <span class="material-symbols-outlined">code</span>
+          View on GitHub
+        </a>
+      </div>
+      <!-- Desktop preview placeholder -->
+      <div class="hero-preview">
+        <div class="preview-frame">
+          <div class="preview-bar">
+            <div class="preview-bar-left">
+              <span class="preview-ws active"></span>
+              <span class="preview-ws"></span>
+              <span class="preview-ws"></span>
+            </div>
+            <div class="preview-bar-clock">14:32</div>
+            <div class="preview-bar-right">
+              <span class="material-symbols-outlined" style="font-size:14px">wifi</span>
+              <span class="material-symbols-outlined" style="font-size:14px">volume_up</span>
+              <span class="material-symbols-outlined" style="font-size:14px">settings</span>
+            </div>
+          </div>
+          <div class="preview-desktop">
+            <div class="preview-card preview-card-a">
+              <div class="preview-card-title">Quick Settings</div>
+              <div class="preview-tile-row">
+                <div class="preview-tile active">
+                  <span class="material-symbols-outlined" style="font-size:16px">wifi</span>
+                </div>
+                <div class="preview-tile">
+                  <span class="material-symbols-outlined" style="font-size:16px">bluetooth</span>
+                </div>
+              </div>
+            </div>
+            <div class="preview-card preview-card-b">
+              <div class="preview-card-title">Now playing</div>
+              <div class="preview-media">
+                <div class="preview-art"></div>
+                <div class="preview-meta">
+                  <div class="preview-track">Song title</div>
+                  <div class="preview-artist">Artist</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label">What's included</div>
+      <h2 class="section-title">Everything you need.</h2>
+      <p class="section-sub">Auralis ships as a complete, ready-to-use desktop. Not a theme — a full environment.</p>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">view_compact_alt</span>
+          </div>
+          <h3>Top Bar</h3>
+          <p>Workspaces, active window, clock, system tray — all in one elegant pill.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">apps</span>
+          </div>
+          <h3>App Launcher</h3>
+          <p>Instant search, icon grid, keyboard navigation. Faster than any Rofi config.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">tune</span>
+          </div>
+          <h3>Quick Settings</h3>
+          <p>Wi-Fi, Bluetooth, volume, brightness, media player — in a single swipe-in panel.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">notifications</span>
+          </div>
+          <h3>Notification Center</h3>
+          <p>Full notification history, Do Not Disturb, and per-app dismiss.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">dashboard</span>
+          </div>
+          <h3>Dashboard</h3>
+          <p>Big clock, system info, media controls, and quick shortcuts — always one keypress away.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">palette</span>
+          </div>
+          <h3>Material 3 Settings</h3>
+          <p>Every slider, switch and toggle is wired to real configuration. Changes take effect immediately.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">wallpaper</span>
+          </div>
+          <h3>Wallpaper Picker</h3>
+          <p>Browse your wallpapers with smooth previews. Optional dynamic accent color extraction.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">code</span>
+          </div>
+          <h3>Hyprland Lua config</h3>
+          <p>Clean, modular Lua configuration. No legacy conf files — just modern Hyprland.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Install strip -->
+  <section class="install-strip">
+    <div class="container">
+      <h2>Ready to try it?</h2>
+      <p>Clone the repo and run one command.</p>
+      <div class="code-block">
+        <pre><code>git clone https://github.com/auralis-desktop/auralis-desktop.git
+cd auralis
+./install.sh</code></pre>
+        <button class="copy-btn" onclick="copyInstall(this)" aria-label="Copy to clipboard">
+          <span class="material-symbols-outlined">content_copy</span>
+        </button>
+      </div>
+      <a href="pages/install.html" class="btn btn-filled" style="margin-top:24px">
+        Full installation guide
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="nav-logo">✦</span>
+          <span>Auralis</span>
+          <span class="footer-tagline">A desktop that feels alive.</span>
+        </div>
+        <div class="footer-links">
+          <a href="pages/install.html">Install</a>
+          <a href="pages/docs.html">Docs</a>
+          <a href="https://github.com/auralis-desktop/auralis-desktop" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/auralis-desktop/auralis-desktop/issues" target="_blank" rel="noopener">Issues</a>
+        </div>
+      </div>
+      <p class="footer-copy">MIT License · Made with ♥ by <a href="https://github.com/FrutigerOS">FrutigerOS</a></p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
